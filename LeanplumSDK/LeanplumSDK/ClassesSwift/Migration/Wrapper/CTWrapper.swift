@@ -197,7 +197,7 @@ class CTWrapper: Wrapper {
         cleverTapInstance?.recordChargedEvent(withDetails: details, andItems: items)
     }
     
-    // MARK: User
+    // MARK: LPUser
     func setUserAttributes(_ attributes: [AnyHashable: Any]) {
         // .compactMapValues { $0 } will not work on not optional type Any which can still hold nil
         let profileAttributes = attributes

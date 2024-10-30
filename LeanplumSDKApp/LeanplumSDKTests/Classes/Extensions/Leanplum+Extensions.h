@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Leanplum(UnitTest)
 
-@property (class, readonly) User* _Nonnull user;
+@property (class, readonly) LPUser* _Nonnull user;
 
 + (NSLocale * _Nullable)systemLocale;
 
