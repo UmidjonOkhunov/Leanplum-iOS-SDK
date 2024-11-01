@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  LPUser.swift
 //  LeanplumSDK
 //
 //  Created by Nikola Zagorchev on 25.02.22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-@objc public class User: NSObject {
+@objc public class LPUser: NSObject {
     public struct UserKey {
         public let appId: String
         public let userId: String

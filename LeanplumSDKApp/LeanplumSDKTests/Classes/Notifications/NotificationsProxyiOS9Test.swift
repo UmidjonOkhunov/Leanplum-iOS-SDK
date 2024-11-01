@@ -119,7 +119,7 @@ class NotificationsProxyiOS9Test: XCTestCase {
     }
     
     /**
-     * Tests notification is receive in foreground. Application became active 1s ago. User did not tap on the notification.
+     * Tests notification is receive in foreground. Application became active 1s ago. LPUser did not tap on the notification.
      */
     func test_notification_applicationDidReceiveRemote_iOS9_active_interval_receive() {
         let manager = Leanplum.notificationsManager() as! NotificationsManagerMock

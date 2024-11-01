@@ -195,7 +195,7 @@ typedef enum Leanplum_AsyncSocketError AsyncSocketError;
 - (BOOL)canSafelySetDelegate;
 - (void)setDelegate:(id)delegate;
 
-/* User data can be a long, or an id or void * cast to a long. */
+/* LPUserer data can be a long, or an id or void * cast to a long. */
 - (long)userData;
 - (void)setUserData:(long)userData;
 
