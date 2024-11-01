@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     s.author = { 'Leanplum' => 'support@leanplum.com' }
     s.social_media_url = 'https://twitter.com/leanplum'
     s.requires_arc = true
-    s.source = { :git => 'https://github.com/UmidjonOkhunov/Leanplum-iOS-SDK/tree/renaming-user.git', :tag => '6.1.1' }
+    s.source = { :git => 'https://github.com/UmidjonOkhunov/Leanplum-iOS-SDK.git' }
     s.ios.deployment_target = '9.0'
     s.frameworks = 'CFNetwork', 'Foundation', 'Security', 'SystemConfiguration', 'UIKit'
     s.weak_frameworks = 'AdSupport', 'StoreKit'
