@@ -134,12 +134,12 @@ void leanplumExceptionHandler(NSException *exception);
     return managerInstance;
 }
 
-+ (User*)user
++ (LPUser*)user
 {
-    static User *userInstance = nil;
+    static LPUser *userInstance = nil;
     static dispatch_once_t onceUserInstanceToken;
     dispatch_once(&onceUserInstanceToken, ^{
-        userInstance = [User new];
+        userInstance = [LPUser new];
     });
     return userInstance;
 }
@@ -431,9 +431,9 @@ void leanplumExceptionHandler(NSException *exception);
         [Leanplum user].pushToken = nil;
         [[Leanplum notificationsManager] removeNotificationSettings];
         
-        // Change the User deviceId after getting the push token and settings
+        // Change the LPUser deviceId after getting the push token and settings
         // and after cleaning UserDefaults
-        // The User userId and deviceId are used in retrieving them
+        // The LPUser userId and deviceId are used in retrieving them
         [[Leanplum user] setDeviceId:deviceId];
         [[LPVarCache sharedCache] saveDiffs];
         
