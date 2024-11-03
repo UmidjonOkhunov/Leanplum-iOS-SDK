@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     s.author = { 'Leanplum' => 'support@leanplum.com' }
     s.social_media_url = 'https://twitter.com/leanplum'
     s.requires_arc = true
-    s.source = { :git => 'https://github.com/UmidjonOkhunov/Leanplum-iOS-SDK.git' }
+    s.source = { :git => 'https://github.com/UmidjonOkhunov/Leanplum-iOS-SDK.git', :branch => 'renaming-user' }
     s.ios.deployment_target = '9.0'
     s.frameworks = 'CFNetwork', 'Foundation', 'Security', 'SystemConfiguration', 'UIKit'
     s.weak_frameworks = 'AdSupport', 'StoreKit'
@@ -34,5 +34,4 @@ Pod::Spec.new do |s|
     }
     s.dependency 'CleverTap-iOS-SDK', '~> 7.0'
     s.swift_version = '5.0'
-  end
-  
+end
