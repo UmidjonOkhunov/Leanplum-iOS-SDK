@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class LeanplumSocket;
 @class LPRegisterDevice;
 @class NotificationsManager;
-@class LPUserer;
+@class LPUser;
 
 /**
  * Keys for the plist file name
